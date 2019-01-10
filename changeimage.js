@@ -1,14 +1,14 @@
-var electric = document.querySelector('#electriccar').style.visibility = "hidden";
-var oil = document.getElementById("#oilcar").style.visibility = "visible";
+var electric = document.querySelector('#electriccar').style.display = "none";
+var oil = document.getElementById("#oilcar").style.display = "block";
 document.addEventListener("click", function(){
   console.log("ciao");
-  if(oil=="visible"){
-    oil="hidden";
-    electric="visible";
+  if(oil=="block"){
+    oil="none";
+    electric="block";
   }
   else{
-    oil="visible";
-    electric="hidden";
+    oil="block";
+    electric="none";
   }
   
 });
