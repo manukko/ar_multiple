@@ -1,3 +1,3 @@
 document.addEventListener("click", function(){
-  console.log("ciao);
+  console.log("ciao");
 });
