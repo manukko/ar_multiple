@@ -1,6 +1,6 @@
-var electric = document.getElementById("electriccar1"); 
+var electric = document.getElementById("electriccar"); 
 electric.setAttribute('visible', false);
-var oil = document.getElementById("oilcar1");
+var oil = document.getElementById("oilcar");
 oil.setAttribute('visible', true);
 document.addEventListener("click", function(){
   console.log("ciao");
