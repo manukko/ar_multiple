@@ -1,14 +1,16 @@
-var electric = document.getElementById("electriccar1").style.display = "none";
-var oil = document.getElementById("oilcar1").style.display = "block";
+var electric = document.getElementById("electriccar1"); 
+electric.style.display = "none";
+var oil = document.getElementById("oilcar1");
+oil.style.display = "block";
 document.addEventListener("click", function(){
   console.log("ciao");
-  if(oil=="block"){
-    oil="none";
-    electric="block";
+  if(oil.style.display=="block"){
+    oil.style.display="none";
+    electric.style.display="block";
   }
   else{
-    oil="block";
-    electric="none";
+    oil.style.display="block";
+    electric.style.display="none";
   }
   
 });
