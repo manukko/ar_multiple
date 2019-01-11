@@ -1,5 +1,5 @@
-var electric = document.getElementById("electriccar").style.display = "none";
-var oil = document.getElementById("oilcar").style.display = "block";
+var electric = document.getElementById("electriccar1").style.display = "none";
+var oil = document.getElementById("oilcar1").style.display = "block";
 document.addEventListener("click", function(){
   console.log("ciao");
   if(oil=="block"){
