@@ -1,18 +1,18 @@
-var electric = document.getElementById("electriccar"); 
-electric.style.visibility = "hidden";
-var oil = document.getElementById("oilcar");
-oil.style.visibility = "visible";
+var electric = document.getElementById("electriccar1"); 
+electric.setAttribute('visible', false);
+var oil = document.getElementById("oilcar1");
+oil.setAttribute('visible', true);
 document.addEventListener("click", function(){
   console.log("ciao");
   
-  if(oil.style.visibility=="visible"){
-    oil.style.visibility="hidden";
-    electric.style.visibility="visible";
+  if(oil.getAttribute('visible') === true){
+    oil.setAttribute('visible', false);
+    electric.setAttribute('visible', true);
   }
   
   else{
-    oil.style.visibility="visible";
-    electric.style.visibility="hidden";
+    oil.setAttribute('visible', true);
+    electric.setAttribute('visible', false);
   }
   
 });
