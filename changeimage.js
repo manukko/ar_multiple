@@ -4,6 +4,11 @@ var oil = document.getElementById("oilcar1");
 var co2 = document.getElementById("co21"); 
 var fuelreserves = document.getElementById("fuelreserves1");
 
+fuelreserves.setAttribute('visible', true);
+co2.setAttribute('visible', false);
+oil.setAttribute('visible', false);
+electric.setAttribute('visible', false);
+
 document.addEventListener("click", function(){
   console.log("ciao");
   i=(i+1)%4;
@@ -36,5 +41,6 @@ document.addEventListener("click", function(){
     electric.setAttribute('visible', true);
   }
   
+
   
 });
