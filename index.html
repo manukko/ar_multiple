@@ -5,52 +5,30 @@
 <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.5/aframe/build/aframe-ar.js"> </script>
 <script src="disappear.js"></script>
 
-<body style='margin : 0px; overflow: hidden;' >
-    <a-scene embedded arjs='trackingMethod: best; debugUIEnabled: false;' crossorigin="anonymous">
-		<!-- handle unknown marker -->
-
-		<!-- handle hiro marker            <a-entity id="pack" gltf-model="url(https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/master/2.0/DamagedHelmet/glTF/DamagedHelmet.gltf)" animation-mixer>
- -->
-	    <a-assets crossorigin="anonymous">
-		    
-
-
-    <a-asset-item crossorigin="anonymous" id="1_graycolor-obj" src="1_graycolor.obj"></a-asset-item>
-    <a-asset-item crossorigin="anonymous" id="1_graycolor-mtl" src="1_graycolor.mtl"></a-asset-item>	    
-    	<img crossorigin="anonymous" id="oilcar" src="./oilcar.png">
-	<img crossorigin="anonymous" id="electriccar" src="./electriccar.png">
-	<img crossorigin="anonymous" id="fuelreserves" src="./fuelreserves.png">
-	<img crossorigin="anonymous" id="co2" src="./co2.png">
-
-
-
-  </a-assets>
-
-
-	    	    
-	    
-       <a-marker preset='hiro' position="0.094 0.119 -5.407" rotation="86.256 -171.95 154.498">
-	       <a-entity crossorigin="anonymous" position="60 -100 520" scale="0.1 0.1 0.1" obj-model="obj:1_graycolor.obj;mtl:1_graycolor.mtl"></a-entity>
-	       
-	       <a-image crossorigin="anonymous" width="2.25" height="2.25" rotation='-90 180 180' src="#fuelreserves" id="fuelreserves1"></a-image>
-	       <a-image crossorigin="anonymous" width="2.25" height="2.25" rotation='-90 180 180' src="#co2" id="co21"></a-image>
-	       <a-image crossorigin="anonymous" width="2.25" height="2.25" rotation='-90 180 180' src="#electriccar" id="oilcar1"></a-image>
-	       <a-image crossorigin="anonymous" width="2.25" height="2.25" rotation='-90 180 180' src="#oilcar" id="electriccar1"></a-image>
-	       <script src="changeimage.js"></script>
-	       
-
-       </a-marker>
+<body style='margin : 0px; overflow: hidden;'>
 	
-		
-	
-
-		
-		<!-- add a simple camera -->
+	<a-scene embedded arjs='trackingMethod: best; debugUIEnabled: false;' crossorigin="anonymous">
+		<a-assets crossorigin="anonymous">
+    			<a-asset-item crossorigin="anonymous" id="1_graycolor-obj" src="1_graycolor.obj"></a-asset-item>
+    			<a-asset-item crossorigin="anonymous" id="1_graycolor-mtl" src="1_graycolor.mtl"></a-asset-item>
+    			<img crossorigin="anonymous" id="oilcar" src="./oilcar.png">
+			<img crossorigin="anonymous" id="electriccar" src="./electriccar.png">
+			<img crossorigin="anonymous" id="fuelreserves" src="./fuelreserves.png">
+			<img crossorigin="anonymous" id="co2" src="./co2.png">
+		</a-assets>
+		<a-marker preset='hiro' position="0.094 0.119 -5.407" rotation="86.256 -171.95 154.498">
+	       		<a-entity crossorigin="anonymous" position="60 -100 520" scale="0.1 0.1 0.1" obj-model="obj:1_graycolor.obj;mtl:1_graycolor.mtl"></a-entity>
+	       		<a-image crossorigin="anonymous" width="2.25" height="2.25" rotation='-90 180 180' src="#fuelreserves" id="fuelreserves1"></a-image>
+	       		<a-image crossorigin="anonymous" width="2.25" height="2.25" rotation='-90 180 180' src="#co2" id="co21"></a-image>
+	      		<a-image crossorigin="anonymous" width="2.25" height="2.25" rotation='-90 180 180' src="#electriccar" id="oilcar1"></a-image>
+	      		<a-image crossorigin="anonymous" width="2.25" height="2.25" rotation='-90 180 180' src="#oilcar" id="electriccar1"></a-image>
+	      		<script src="changeimage.js"></script>
+      		</a-marker>
 		<a-entity camera></a-entity>
-
-	    
 	</a-scene>
+	
 	<button id='button' style='position:absolute; color: white; background-color:red; left:40%; top:90%; height:5%; display:inline-block'>Whats up</button>
 	<script src="button.js"></script>
+	
 </body>
 </html>
